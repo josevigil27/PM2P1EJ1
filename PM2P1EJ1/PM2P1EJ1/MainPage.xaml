@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2P1EJ1.MainPage">
+
+    <StackLayout HorizontalOptions="Center">
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Operacion de 2 Numeros" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <Entry
+            x:Name="Num1"
+            Placeholder="Numero 1"
+            Margin="50, 50, 50, 0"
+            Keyboard="Numeric" />
+        
+        <Entry 
+            x:Name="Num2"
+            Placeholder="Numero 2"
+            Margin="50, 25, 50, 30"
+            Keyboard="Numeric" />
+
+        <Button 
+            Text="Suma"
+            Margin="50, 0, 50, 15"
+            Clicked="btnsuma_Clicked" />
+
+        <Button 
+            Text="Resta"
+            Margin="50, 0, 50, 15"
+            Clicked="btnresta_Clicked" />
+
+        <Button 
+            Text="Multiplicacion"
+            Margin="50, 0, 50, 15"
+            Clicked="btnmultiplicacion_Clicked" />
+
+        <Button 
+            Text="Division"
+            Margin="50, 0, 50, 15"
+            Clicked="btndivision_Clicked" />
+
+    </StackLayout>
+
+</ContentPage>
